@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECS vs Competitor Evaluation</title>
+</head>
+<body>
+    <h2>ECS vs Competitor Evaluation Survey</h2>
+    <form id="survey-form">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>#</th>
+                <th>Parameter</th>
+                <th>ECS Rating (1-10)</th>
+                <th>Competitor Brand Name</th>
+                <th>Competitor Rating (1-10)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Market Competitive Salary</td>
+                <td><input type="number" name="ecs_rating_1" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_1" required></td>
+                <td><input type="number" name="competitor_rating_1" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bonus and Incentives</td>
+                <td><input type="number" name="ecs_rating_2" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_2" required></td>
+                <td><input type="number" name="competitor_rating_2" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Food Allowance</td>
+                <td><input type="number" name="ecs_rating_3" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_3" required></td>
+                <td><input type="number" name="competitor_rating_3" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Social Security</td>
+                <td><input type="number" name="ecs_rating_4" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_4" required></td>
+                <td><input type="number" name="competitor_rating_4" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Life Takaful / Pay Continuation</td>
+                <td><input type="number" name="ecs_rating_5" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_5" required></td>
+                <td><input type="number" name="competitor_rating_5" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Training and Development</td>
+                <td><input type="number" name="ecs_rating_6" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_6" required></td>
+                <td><input type="number" name="competitor_rating_6" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Rewards & Recognition</td>
+                <td><input type="number" name="ecs_rating_7" min="1" max="10" required></td>
+                <td><input type="text" name="competitor_name_7" required></td>
+                <td><input type="number" name="competitor_rating_7" min="1" max="10" required></td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <script>
+    const form = document.getElementById('survey-form');
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const data = new FormData(form);
+        fetch('https://script.google.com/macros/s/PASTE-YOUR-SCRIPT-ID-HERE/exec', {
+            method: 'POST',
+            body: data
+        })
+        .then(response => alert('Survey Submitted Successfully!'))
+        .catch(error => alert('Error! Please try again.'));
+    });
+    </script>
+</body>
+</html>

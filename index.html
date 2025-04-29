@@ -1,161 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ECS Employee Value Proposition Survey</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employment Decision Drivers</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <img src="ecs-logo.png" alt="ECS Logo" class="logo" />
-    <h1>Employee Value Proposition Survey</h1>
-    <p>
-      Asalamoalykum! Dear retail team, we would be obliged if you can spare some time and share your valuable feedback.
-      This will help us to improve our employee value proposition which in turn will enhance your employee experience.
-    </p>
-
-    <h2>Section 1: Employment Decision Drivers</h2>
-
-    <!-- Question 1 -->
-    <div class="question">
-      <label for="q1">
-        <strong>Q1.</strong> When deciding whether to select an employer, what
-        <strong>factors do you consider</strong> while making this decision?<br />
-        <em>Please mention the factors as bullet points.</em>
-      </label>
-      <textarea id="q1" name="q1" rows="6" placeholder="• Job security&#10;• Growth opportunities&#10;• Salary..." required></textarea>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="question">
-      <label>
-        <strong>Q2.</strong> When deciding whether to select an employer what <strong>factors are important</strong> to you?<br />
-        <em>Please rank them in order of preference, where 1 = Most Important, 2 = Next Most Important, and so on.</em><br />
-        <strong>(Multiple Response)</strong>
-      </label>
-      <div class="ranking-table">
-        <!-- Loopable entry -->
-        <div class="rank-row">
-          <span>Market Competitive Salary (Fixed + Commission)</span>
-          <select name="salary">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Bonus and Incentives</span>
-          <select name="bonus">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Food Allowance</span>
-          <select name="food">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Social Security</span>
-          <select name="security">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Life Takaful/Pay Cont.</span>
-          <select name="takaful">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Training and Development</span>
-          <select name="training">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Rewards & Recognition</span>
-          <select name="rewards">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Company Culture (Caring & Supportive Environment)</span>
-          <select name="culture">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Career Progression (Growth Opportunity)</span>
-          <select name="growth">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Authority / Empowerment</span>
-          <select name="authority">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Respect</span>
-          <select name="respect">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Work Life Balance (Leaves)</span>
-          <select name="balance">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Shift Timings</span>
-          <select name="timings">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Favoritism</span>
-          <select name="favoritism">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Job Security</span>
-          <select name="jobsecurity">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Engagement Activities (Anniversaries, Outdoor Trips)</span>
-          <select name="engagement">
-            <option value="">Rank</option>
-            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-          </select>
-        </div>
-        <div class="rank-row">
-          <span>Others</span>
-          <input type="text" name="others" placeholder="Write here..." />
-        </div>
-      </div>
-    </div>
-
-    <button type="submit">Submit</button>
+    <h1>Section 1: Employment Decision Drivers</h1>
+    <p class="instruction">When deciding whether to select an employer, what <strong>factors are important</strong> to you? <em>Please rank them in order of preference, where 1 = Most Important, 2 = Next Most Important, and so on.</em></p>
+    <p class="note">(Multiple Response)</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Factors</th>
+          <th>Ranking</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Market Competitive Salary (Fixed + Commission)</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Bonus and Incentives</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Food Allowance</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Social Security</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Life Takaful/Pay Cont.</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Training and Development</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Rewards & Recognition</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Company Culture (Caring & Supportive Environment)</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Career Progression (Growth Opportunity)</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+        <tr>
+          <td>Authority / Empowerment</td>
+          <td><input type="number" min="1" max="10" class="rank-input"></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>

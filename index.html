@@ -1,86 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ECS vs Competitor Evaluation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECS Employee Value Proposition Survey</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h2>ECS vs Competitor Evaluation Survey</h2>
-    <form id="survey-form">
-        <table border="1" cellpadding="5">
-            <tr>
-                <th>#</th>
-                <th>Parameter</th>
-                <th>ECS Rating (1-10)</th>
-                <th>Competitor Brand Name</th>
-                <th>Competitor Rating (1-10)</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Market Competitive Salary</td>
-                <td><input type="number" name="ecs_rating_1" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_1" required></td>
-                <td><input type="number" name="competitor_rating_1" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Bonus and Incentives</td>
-                <td><input type="number" name="ecs_rating_2" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_2" required></td>
-                <td><input type="number" name="competitor_rating_2" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Food Allowance</td>
-                <td><input type="number" name="ecs_rating_3" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_3" required></td>
-                <td><input type="number" name="competitor_rating_3" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Social Security</td>
-                <td><input type="number" name="ecs_rating_4" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_4" required></td>
-                <td><input type="number" name="competitor_rating_4" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Life Takaful / Pay Continuation</td>
-                <td><input type="number" name="ecs_rating_5" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_5" required></td>
-                <td><input type="number" name="competitor_rating_5" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Training and Development</td>
-                <td><input type="number" name="ecs_rating_6" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_6" required></td>
-                <td><input type="number" name="competitor_rating_6" min="1" max="10" required></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Rewards & Recognition</td>
-                <td><input type="number" name="ecs_rating_7" min="1" max="10" required></td>
-                <td><input type="text" name="competitor_name_7" required></td>
-                <td><input type="number" name="competitor_rating_7" min="1" max="10" required></td>
-            </tr>
-        </table>
-        <br>
-        <button type="submit">Submit Survey</button>
-    </form>
+  <div class="container">
+    <img src="ecs-logo.png" alt="ECS Logo" class="logo" />
+    <h1>Employee Value Proposition Survey</h1>
+    <p>
+      Asalamoalykum! Dear retail team, we would be obliged if you can spare some time and share your valuable feedback.
+      This will help us to improve our employee value proposition which in turn will enhance your employee experience.
+    </p>
 
-    <script>
-    const form = document.getElementById('survey-form');
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const data = new FormData(form);
-        fetch('https://script.google.com/macros/s/AKfycbwcaG7SB8aBxfhixV5g1lzX_ob0NuHjb8aay1CifB0WPmTNQIFKHBzxEU58TFAj9xglLQ/exec', {
-            method: 'POST',
-            body: data
-        })
-        .then(response => alert('Survey Submitted Successfully!'))
-        .catch(error => alert('Error! Please try again.'));
-    });
-    </script>
+    <h2>Section 1: Employment Decision Drivers</h2>
+
+    <div class="question">
+      <label for="q1">
+        <strong>Q1.</strong> When deciding whether to select an employer, what
+        <strong>factors do you consider</strong> while making this decision?
+        <em>Please mention the factors as bullet points.</em>
+      </label>
+      <textarea id="q1" name="q1" rows="6" placeholder="• Job security&#10;• Growth opportunities&#10;• Salary..." required></textarea>
+    </div>
+
+    <!-- More questions will go here -->
+
+    <button type="submit">Submit</button>
+  </div>
 </body>
 </html>

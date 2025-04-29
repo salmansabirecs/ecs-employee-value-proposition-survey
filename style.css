@@ -1,22 +1,18 @@
-/* Reset some basic styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base body styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f6f6f6;
-  line-height: 1.6;
   color: #333;
   padding: 10px;
 }
 
-/* Main container */
 .container {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
   background: #fff;
   padding: 24px;
@@ -24,14 +20,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo styling */
 .logo {
   width: 100px;
   display: block;
   margin: 0 auto 20px auto;
 }
 
-/* Headings */
 h1 {
   text-align: center;
   font-size: 1.8rem;
@@ -45,22 +39,20 @@ h2 {
   margin: 20px 0 10px;
 }
 
-/* Paragraph */
 p {
   font-size: 1rem;
   margin-bottom: 20px;
   text-align: justify;
 }
 
-/* Question box */
 .question {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 label {
   font-size: 1rem;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 textarea {
@@ -70,9 +62,37 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
+  margin-top: 5px;
 }
 
-/* Submit button */
+.ranking-table {
+  margin-top: 15px;
+}
+
+.rank-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.rank-row span {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.rank-row select,
+.rank-row input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 80px;
+}
+
+/* Button styling */
 button {
   width: 100%;
   background-color: #c00;
@@ -89,21 +109,23 @@ button:hover {
   background-color: #a00;
 }
 
-/* Media Queries */
+/* Mobile responsive */
 @media (max-width: 600px) {
+  .rank-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rank-row select,
+  .rank-row input[type="text"] {
+    width: 100%;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
 
   h2 {
     font-size: 1.2rem;
-  }
-
-  textarea, button {
-    font-size: 0.95rem;
-  }
-
-  .container {
-    padding: 16px;
   }
 }

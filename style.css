@@ -1,64 +1,63 @@
-/* style.css */
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8f8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-.container {
-  width: 90%;
-  margin: 30px auto;
-  background-color: #ffffff;
+main {
+  max-width: 900px;
+  margin: auto;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(150, 0, 24, 0.2); /* Maroonish ECS tone */
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-h1 {
-  color: #960018; /* Dark Maroon (ECS theme) */
-  text-align: center;
-  margin-bottom: 20px;
+h1, h2 {
+  color: #2c3e50;
 }
 
-.instruction, .note {
-  color: #960018;
-  text-align: center;
-}
-
-table {
+textarea, input[type="text"], input[type="date"] {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
 }
 
-th, td {
-  border: 1px solid #d4d4d4;
-  padding: 12px;
-  text-align: center;
+label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-th {
-  background-color: #960018;
-  color: white;
-  font-size: 18px;
+ul {
+  padding-left: 20px;
 }
 
-td {
-  font-size: 16px;
+.nps-scale {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.rank-input {
-  width: 60px;
-  padding: 5px;
-  border: 1px solid #960018;
-  border-radius: 8px;
-  text-align: center;
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
 }
 
-.rank-input:focus {
-  outline: none;
-  border: 2px solid #ff5b77; /* Soft pink tone for focus */
-  box-shadow: 0 0 5px rgba(255, 91, 119, 0.5);
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+  .nps-scale {
+    flex-wrap: wrap;
+  }
 }

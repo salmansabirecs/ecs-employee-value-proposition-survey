@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employment Decision Drivers</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Value Proposition Survey</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Section 1: Employment Decision Drivers</h1>
-    <p class="instruction">When deciding whether to select an employer, what <strong>factors are important</strong> to you? <em>Please rank them in order of preference, where 1 = Most Important, 2 = Next Most Important, and so on.</em></p>
-    <p class="note">(Multiple Response)</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Factors</th>
-          <th>Ranking</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Market Competitive Salary (Fixed + Commission)</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Bonus and Incentives</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Food Allowance</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Social Security</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Life Takaful/Pay Cont.</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Training and Development</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Rewards & Recognition</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Company Culture (Caring & Supportive Environment)</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Career Progression (Growth Opportunity)</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-        <tr>
-          <td>Authority / Empowerment</td>
-          <td><input type="number" min="1" max="10" class="rank-input"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <main>
+    <h1>Employee Value Proposition Survey</h1>
+    <p>Asalamoalykum! Dear retail team, we would be obliged if you can spare some time and share your valuable feedback. This will help us improve our employee value proposition and enhance your employee experience.</p>
+
+    <section>
+      <h2>Section 1: Employment Decision Drivers</h2>
+      <p><strong>Q1:</strong> What factors do you consider when selecting an employer? (Open Ended)</p>
+      <textarea rows="4" placeholder="Your response here..."></textarea>
+
+      <p><strong>Q2:</strong> Please rank the following in order of importance (1 = Most Important):</p>
+      <ul>
+        <li>Market Competitive Salary (Fixed + Commission)</li>
+        <li>Bonus and Incentives</li>
+        <li>Food Allowance</li>
+        <li>Social Security</li>
+        <li>Life Takaful / Pay Contribution</li>
+        <li>Training and Development</li>
+        <li>Rewards & Recognition</li>
+        <li>Company Culture</li>
+        <li>Career Progression</li>
+        <li>Authority / Empowerment</li>
+        <li>Respect</li>
+        <li>Work Life Balance</li>
+        <li>Shift Timings</li>
+        <li>Favoritism</li>
+        <li>Job Security</li>
+        <li>Engagement Activities</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Section 2: ECS Performance on Decision Drivers</h2>
+      <p>Q3: Rate ECS and competitors (1 = Poor, 10 = Excellent):</p>
+      <p><em>(Note: Table formatting should be handled via CSS or a JavaScript plugin if needed)</em></p>
+    </section>
+
+    <section>
+      <h2>Section 3: Work Life Balance</h2>
+      <p><strong>Q4:</strong> Primary reasons for taking leave (Open Ended)</p>
+      <textarea rows="4" placeholder="Your response here..."></textarea>
+
+      <p><strong>Q5:</strong> Rank reasons for taking leave:</p>
+      <ul>
+        <li>Personal Health</li>
+        <li>Family Responsibilities</li>
+        <li>Transportation Challenges</li>
+        <li>Workload Imbalance</li>
+        <li>Conflict with Manager or Team</li>
+        <li>Job Dissatisfaction</li>
+        <li>Poor Working Conditions</li>
+        <li>Job Hunting</li>
+        <li>Working Part-Time</li>
+        <li>Absenteeism Culture</li>
+        <li>Other</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Section 4: Net Promoter Score</h2>
+      <p><strong>Q6:</strong> How likely are you to recommend ECS?</p>
+      <div class="nps-scale">
+        <span>☹️</span>
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        <span>😊</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Section 5: Likes & Dislikes</h2>
+      <p><strong>Q7:</strong> What do you like about working at ECS?</p>
+      <textarea rows="4"></textarea>
+
+      <p><strong>Q8:</strong> What do you dislike?</p>
+      <textarea rows="4"></textarea>
+
+      <p><strong>Q9:</strong> Suggestions for improvement:</p>
+      <textarea rows="4"></textarea>
+    </section>
+
+    <section>
+      <h2>Employee Info</h2>
+      <label>Name: <input type="text" /></label><br />
+      <label>Employee Code: <input type="text" /></label><br />
+      <label>Designation: <input type="text" /></label><br />
+      <label>Store Location: <input type="text" /></label><br />
+      <label>Date of Joining: <input type="date" /></label><br />
+      <label>Reporting: <input type="text" /></label>
+    </section>
+
+    <footer>
+      <p><strong>Note:</strong> This survey is confidential and for internal use only. It cannot be copied or shared without consent from the CX team.</p>
+    </footer>
+  </main>
 </body>
 </html>
